@@ -1,0 +1,23 @@
+.accordion-style-01 {
+	.accordion {
+		.accordion-item {
+			color: var(--#{$prefix}body-color);
+			.accordion-button {		    
+			    background: none;
+			    padding: 1rem 0;
+			    font-weight: 500;
+			    color: var(--#{$prefix}dark);
+				&:not(.collapsed) {
+					color: var(--#{$prefix}primary);
+				    outline: none;
+					box-shadow: none;
+				}
+			}
+		}
+		.accordion-body {
+			padding-left: 0;
+			padding-top: 0;
+		}
+
+	}
+}

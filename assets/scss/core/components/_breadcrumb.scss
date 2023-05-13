@@ -1,0 +1,19 @@
+.breadcrumb-light {
+	font-size: 0.85rem;
+	.breadcrumb-item {
+		color: rgba(var(--#{$prefix}white-rgb), 0.85);
+		a {
+			color: rgba(var(--#{$prefix}white-rgb), 1);
+		}
+		+ .breadcrumb-item{
+			&:before {
+				color: rgba(var(--#{$prefix}white-rgb), 0.7);
+			}
+		}
+	}
+}
+
+
+.page-item:not(:first-child) .page-link {
+	margin-left: -1px;
+}

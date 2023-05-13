@@ -1,0 +1,130 @@
+.product-card {
+	position: relative;
+	.product-card-sale {
+		position: absolute;
+		top: 0.8rem;
+		left: 0.8rem;
+	}
+	.product-card-media {
+		position: relative;
+		overflow: hidden;
+		img {
+			transition: ease all 0.35s;
+			transform: scale(1);
+		}
+		.product-media-hover {
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			opacity: 0;
+			transition: ease all 0.25s;
+			img {
+				height: 100%;
+				width: 100%;
+				object-fit: cover;
+				opacity: 1;
+				transform: scale(1.05);
+			}
+		}
+	}	
+
+	.product-cart-btn {
+		position: absolute;
+		left: 15px;
+		right: 15px;
+		bottom: 25px;
+		opacity: 0;
+		transition: ease all 0.25s;
+		.btn {
+			width: 100%;
+			padding: 8px 0;
+			font-size: 13px;
+		}
+	}
+
+	.product-card-info {
+		padding-top: 12px;
+	}
+	.product-card-btns {
+		position: absolute;
+		top: 10px;
+		right: 10px;
+		display: flex;
+		flex-direction: column ;
+		.p-btn {
+			width: 35px;
+			height: 35px;
+			border-radius: 50%;
+			display: inline-flex;
+			align-items: center;
+			justify-content: center;
+			background: var(--#{$prefix}white);
+			color: var(--#{$prefix}dark);
+		    padding: 0;
+			font-size: 1.2rem;
+			&:hover {
+				background: var(--#{$prefix}primary);
+				color: var(--#{$prefix}white);
+			}
+			+ .p-btn {
+				margin-top: 8px;
+			}
+		}
+	}
+	.product-card-rating {
+		font-size: 0.75rem;
+		color: var(--#{$prefix}warning);
+		span {
+			color: var(--#{$prefix}body-color);
+		}
+	}
+	.product-card-brand {
+		font-size: 0.65rem;
+	    text-transform: uppercase;
+	    font-weight: 400;
+	    letter-spacing: 1px;
+	    color: var(--#{$prefix}gray-600);
+	    line-height: normal;
+	}
+
+	.product-card-title {
+		padding-bottom: 0;
+		a {
+			color: var(--#{$prefix}dark);
+			font-weight: 600;
+		}
+	}
+
+	.product-card-price {
+		span {
+			color: var(--#{$prefix}dark);
+			font-weight: 500;
+		}
+		.pp-offer {
+			color: var(--#{$prefix}danger);
+			font-size: 80%;
+		}
+		del {
+			font-size: 80%;
+		}
+	}
+
+
+	&:hover {
+		.product-card-media {
+			img {
+				transform: scale(1.06);
+			}
+			.product-media-hover {
+				opacity: 1;
+				transform: scale(1);
+			}
+		}
+		.product-cart-btn {
+			bottom: 15px;
+			opacity: 1;
+		}
+	}
+}

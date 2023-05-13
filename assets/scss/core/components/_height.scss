@@ -1,0 +1,9 @@
+.cd-height {
+	height: var(--cd-height);
+}
+
+@include media-breakpoint-down(md) {
+	.cd-md-height {
+		height: var(--cd-md-height);
+	}
+}

@@ -1,0 +1,36 @@
+.bg-cover {
+    background-size: cover;
+}
+
+.bg-right-center {
+    background-position: center right;
+}
+
+.bg-no-repeat {
+    background-repeat: no-repeat;
+}
+
+.bg-center {
+    background-position: center;
+}
+
+@include media-breakpoint-up(lg) {
+  .bg-fixed {
+    background-attachment: fixed;
+  }
+}
+
+
+.bg-gray-g {
+    background: linear-gradient(0deg, rgba(var(--bs-white-rgb), 0), rgba(var(--bs-gray-100-rgb), 1) 100%) !important;
+}
+
+.bg-gray-g-reverse {
+    background: linear-gradient(0deg, rgba(var(--bs-gray-100-rgb), 1), rgba(var(--bs-white-rgb), 0) 100%) !important;
+}
+
+.bg-black-g {
+    background-image: linear-gradient(transparent, var(--#{$prefix}black));
+}
+
+

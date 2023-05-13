@@ -1,0 +1,132 @@
+.link-effect {
+	position: relative;
+	padding: 0;
+	border: none;
+	background: none;
+	&:after {
+		content: "";
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		right: auto;
+		width: 100%;
+		height: 1px;
+		background: currentColor;
+		transition: ease all 0.35s;
+	}
+	&:hover {
+		&:after {
+			width: 0;
+			right: 0;
+			left: auto;
+		}
+	}
+}
+
+.link-style-01 {
+	display: flex;
+	max-width: 100%;
+	overflow-y: auto;
+	padding-bottom: 10px;
+	a {
+		padding: 0.6rem 1rem;
+		color: var(--#{$prefix}dark);
+		font-weight: 500;
+		margin-right: 0.4rem;
+		white-space: nowrap;
+		border: 1px solid var(--#{$prefix}gray-300);;
+		&:hover,
+		&.active {
+			background: var(--#{$prefix}primary);
+			border-color: var(--#{$prefix}primary);
+			color: var(--#{$prefix}white);
+		}
+	}
+}
+
+
+.link-style-02 {
+	display: flex;
+	flex-wrap: wrap;
+	a {
+		padding: 0.6rem 1rem;
+		background: var(--#{$prefix}gray-100);
+		color: var(--#{$prefix}dark);
+		border-radius: 5px;
+		font-weight: 500;
+		margin-right: 0.4rem;
+		margin-bottom: 0.4rem;
+		&:hover,
+		&.active {
+			background: var(--#{$prefix}primary);
+			box-shadow: $box-shadow-sm;
+			color: var(--#{$prefix}white);
+		}
+	}
+}
+
+
+
+
+.link-style-03 {
+	li {
+		+ li {
+			padding-top: 3px;
+		}
+		a {
+			font-size: 14px;
+			color: $body-color;
+			font-weight: 400;
+			position: relative;
+			background-image: linear-gradient(to right, currentColor 0%, currentColor 100%);
+		    background-size: 0px 1px;
+		    background-position: 0px 95%;
+		    background-repeat: no-repeat;
+		    transition: ease all 0.35s;
+			&:hover {
+				color: $primary;
+				background-size: 100% 1px;
+			}
+		}
+	}
+}
+
+
+.cd-menu-link {
+	a {
+		padding: 0.4rem 0.5rem;
+		background: var(--#{$prefix}white);
+		color: var(--#{$prefix}gray-700);
+		font-size: $font-size-base * .95;
+		i {
+			margin-right: 0.8rem;
+		}
+		&.active,
+		&:hover {
+			background: rgba(var(--#{$prefix}primary-rgb), .1);
+			color: var(--#{$prefix}primary);
+		}
+	}
+}
+
+
+.cd-menu-link-02 {
+	a {
+		padding: 0.4rem 0.5rem;
+		background: var(--#{$prefix}white);
+		color: var(--#{$prefix}gray-700);
+		display: inline-flex;
+		width: 100%;
+		margin-bottom: 0.25rem;
+		font-size: $font-size-base * .95;
+		font-weight: 500;
+		i {
+			margin-right: 0.8rem;
+		}
+		&.active,
+		&:hover {
+			background: rgba(var(--#{$prefix}primary-rgb), .1);
+			color: var(--#{$prefix}primary);
+		}
+	}
+}

@@ -1,0 +1,423 @@
+// Variables
+//
+// Variables should follow the `$component-state-property-size` formula for
+// consistent naming. Ex: $nav-link-disabled-color and $modal-content-box-shadow-xs.
+
+// Color system
+
+// scss-docs-start gray-color-variables
+$white:    #fff !default;
+$gray-100: #F6F9FF !default;
+$gray-200: #e9ecef !default;
+$gray-300: #dee2e6 !default;
+$gray-400: #ced4da !default;
+$gray-500: #adb5bd !default;
+$gray-600: #6c757d !default;
+$gray-700: #495057 !default;
+$gray-800: #343a40 !default;
+$gray-900: #212529 !default;
+$black:    #000 !default;
+// scss-docs-end gray-color-variables
+
+
+
+
+// fusv-disable
+// scss-docs-start gray-colors-map
+$grays: (
+  "100": $gray-100,
+  "200": $gray-200,
+  "300": $gray-300,
+  "400": $gray-400,
+  "500": $gray-500,
+  "600": $gray-600,
+  "700": $gray-700,
+  "800": $gray-800,
+  "900": $gray-900
+) !default;
+// scss-docs-end gray-colors-map
+// fusv-enable
+
+
+// scss-docs-start color-variables
+$blue:    #0d6efd !default;
+$indigo:  #6610f2 !default;
+$purple:  #6f42c1 !default;
+$pink:    #d63384 !default;
+$red:     #dc3545 !default;
+$orange:  #fd7e14 !default;
+$yellow-d:  #ffc107 !default;
+$green:   #198754 !default;
+$teal:    #20c997 !default;
+$cyan:    #0dcaf0 !default;
+// scss-docs-end color-variables
+
+// scss-docs-start colors-map
+$colors: (
+  "blue":       $blue,
+  "indigo":     $indigo,
+  "purple":     $purple,
+  "pink":       $pink,
+  "red":        $red,
+  "orange":     $orange,
+  "yellow-d":   $yellow-d,
+  "green":      $green,
+  "teal":       $teal,
+  "cyan":       $cyan,
+  "black":      $black,
+  "white":      $white,
+  "gray":       $gray-600,
+  "gray-dark":  $gray-800
+) !default;
+// scss-docs-end colors-map
+
+// scss-docs-start theme-color-variables
+$primary:       #560bad !default;
+$secondary:     $gray-600 !default;
+$success:       $green !default;
+$info:          $cyan !default;
+$warning:       $yellow-d !default;
+$danger:        $red !default;
+$light:         $gray-100 !default;
+$dark:          #011627 !default;
+
+$pink:       #ff90e8 !default;
+$yellow:     #f1f333 !default;
+$yellow-dark: #ffc900 !default;
+$violet:     #b23386 !default;
+$teal:       #23a094 !default;
+$purple:     #90a8ed !default;
+$orange:     #e2442f !default;
+// scss-docs-end theme-color-variables
+
+// scss-docs-start theme-colors-map
+$theme-colors: (
+  "primary":    $primary,
+  "secondary":  $secondary,
+  "success":    $success,
+  "info":       $info,
+  "warning":    $warning,
+  "danger":     $danger,
+  "light":      $light,
+  "dark":       $dark,
+  "pink":       #ff90e8,
+  "yellow":     #f1f333,
+  "yellow-dark": #ffc900,
+  "violet":     #b23386,
+  "teal":       #23a094,
+  "purple":     #90a8ed,
+  "orange":     #e2442f,
+  "gray-100":   $gray-100,
+  "gray-200":   $gray-200,
+  "gray-300":   $gray-300,
+  "gray-400": 	$gray-400,
+  "gray-500": 	$gray-500,
+  "gray-600": 	$gray-600,
+  "gray-700": 	$gray-700,
+  "gray-800": 	$gray-800,
+  "gray-900": 	$gray-900
+) !default;
+// scss-docs-end theme-colors-map
+
+
+
+
+// Options
+//
+// Quickly modify global styling by enabling or disabling optional features.
+$enable-negative-margins:     true !default;
+$enable-rounded:              false !default;
+
+// Prefix for :root CSS variables
+
+$variable-prefix:             bs- !default; // Deprecated in v5.2.0 for the shorter `$prefix`
+$prefix:                      $variable-prefix !default;
+
+
+// Spacing
+//
+// Control the default styling of most Bootstrap elements by modifying these
+// variables. Mostly focused on spacing.
+// You can add more entries to the $spacers map, should you need more variation.
+
+$spacer: 1rem !default;
+$spacers: (
+  0: 0,
+  1: $spacer / 4,
+  2: $spacer / 2,
+  3: $spacer,
+  4: $spacer * 1.5,
+  5: $spacer * 2,
+  6: $spacer * 2.5,
+  7: $spacer * 3,
+  8: $spacer * 3.5,
+  9: $spacer * 4,
+  10: $spacer * 5,
+  11: $spacer * 6,
+  12: $spacer * 9,
+) !default;
+
+
+// scss-docs-start box-shadow-variables
+$box-shadow:                  0px 2px 4px -1px rgba(var(--#{$prefix}dark-rgb), 0.1), 0px 2px 4px -2px rgba(var(--#{$prefix}dark-rgb), 0.1) !default;
+$box-shadow-xs:               0px 1px 2px rgba(var(--#{$prefix}dark-rgb), 0.05) !default;
+$box-shadow-sm:               0px 1px 3px rgba(var(--#{$prefix}dark-rgb), 0.04), 0px 1px 2px -1px rgba(var(--#{$prefix}dark-rgb), 0.05) !default;
+$box-shadow-lg:               0px 10px 15px -3px rgba(var(--#{$prefix}dark-rgb), 0.05), 0px 4px 6px -4px rgba(var(--#{$prefix}dark-rgb), 0.05) !default;
+$box-shadow-xl:               0px 20px 25px -5px rgba(var(--#{$prefix}dark-rgb), 0.02), 0px 8px 10px -6px rgba(var(--#{$prefix}dark-rgb), 0.05) !default;
+$box-shadow-xxl:              0px 25px 50px -12px rgba(var(--#{$prefix}dark-rgb), 0.05) !default;
+
+$box-shadow-inset:            inset 0 1px 2px rgba($black, .075) !default;
+
+$box-shadow-sm-hover:         0 12px 15px rgba(var(--#{$prefix}gray-700-rgb),.1) !default;
+$box-shadow-hover:            0 .375rem 1.5rem 0 rgba(var(--#{$prefix}gray-700-rgb),.125) !default;
+$box-shadow-lg-hover:         0 10px 40px 10px rgba(var(--#{$prefix}gray-700-rgb),.175) !default;
+
+
+
+// Body
+//
+// Settings for the `<body>` element.
+//$body-color:            #6e6e6e !default;
+$body-color:            #718096 !default;
+$body-bg:               $white !default;
+
+
+// Links
+//
+// Style anchor elements.
+
+$link-decoration:      none !default;
+
+
+// Fonts
+//
+// Font, line-height, and color for body text, headings, and more.
+
+$path-to-fonts:                             'https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap' !default;
+
+$font-family-sans-serif-cutom:              'Poppins', -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
+$font-family-sans-serif:                    $font-family-sans-serif-cutom !default;
+
+$font-size-base:                            0.89rem !default;
+$font-size-base-alt:                        1rem !default;
+$font-size-xl:                              $font-size-base-alt * 1.25 !default;
+$font-size-lg:                              $font-size-base-alt * 1.125 !default;
+$font-size-sm:                              $font-size-base-alt * .85 !default;
+$font-size-xs:                              $font-size-base-alt * .75 !default;
+
+$font-weight-normal:                        400 !default;
+$font-weight-medium:                        500 !default;
+$font-weight-semibold:                      600 !default;
+$font-weight-bold:                          700 !default;
+
+
+$line-height-base:                          1.7 !default;
+$line-height-sm:                            1.4 !default;
+$line-height-lg:                            1.8 !default;
+
+$font-weight-base:                          400 !default;
+
+$h1-font-size:                              $font-size-base-alt * 2.5 !default;
+$h2-font-size:                              $font-size-base-alt * 2 !default;
+$h3-font-size:                              $font-size-base-alt * 1.75 !default;
+$h4-font-size:                              $font-size-base-alt * 1.5 !default;
+$h5-font-size:                              $font-size-base-alt * 1.25 !default;
+$h6-font-size:                              $font-size-base-alt !default;
+$headings-color:                            $dark!default;
+$headings-font-weight:                      600 !default;
+
+// Modifying default Bootstrap's $font-sizes map
+$font-sizes: (
+  1:                                        $h1-font-size,
+  2:                                        $h2-font-size,
+  3:                                        $h3-font-size,
+  4:                                        $h4-font-size,
+  5:                                        $h5-font-size,
+  6:                                        $h6-font-size,
+  'xl':                                     $font-size-xl,
+  'lg':                                     $font-size-lg,
+  'base':                                   $font-size-base,
+  'sm':                                     $font-size-sm,
+  'xs':                                     $font-size-xs
+) !default;
+
+$lead-font-size:                            $font-size-base-alt * 1.5 !default;
+$lead-font-weight:                          $font-weight-normal !default;
+
+// Modifying default Bootstrap's $display-font-sizes map
+$display-font-sizes: (
+  1: $font-size-base-alt * 5,
+  2: $font-size-base-alt * 4.5,
+  3: $font-size-base-alt * 4,
+  4: $font-size-base-alt * 3.5,
+  5: $font-size-base-alt * 3,
+  6: $font-size-base-alt * 2.625
+) !default;
+
+$display-font-weight:                       700 !default;
+
+
+// scss-docs-start container-max-widths
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+  xxl: 1280px
+) !default;
+
+
+$border-width:                1px !default;
+$border-color:                $gray-300 !default;
+
+// scss-docs-start border-radius-variables
+$border-radius:               .375rem !default;
+$border-radius-sm:            .25rem !default;
+$border-radius-lg:            .5rem !default;
+$border-radius-xl:            1rem !default;
+$border-radius-2xl:           2rem !default;
+$border-radius-pill:          50rem !default;
+// scss-docs-end border-radius-variables
+
+
+// Dropdowns
+//
+// Dropdown menu container and contents.
+
+// scss-docs-start dropdown-variables
+$dropdown-padding-x:                0.5rem !default;
+$dropdown-padding-y:                0.7rem !default;
+$dropdown-font-size:                $font-size-base-alt * .95 !default;
+
+$dropdown-link-hover-color:         var(--#{$prefix}black) !default;
+$dropdown-link-hover-bg:            rgba(var(--#{$prefix}primary-rgb), .10) !default;
+
+/*$dropdown-link-active-color:        var(--#{$prefix}black) !default;
+$dropdown-link-active-bg:           var(--#{$prefix}primary) !default;*/
+
+$dropdown-border-width:             1px !default;
+$dropdown-border-color:             var(--#{$prefix}dark) !default;
+
+$dropdown-color:                    var(--#{$prefix}body-color) !default;
+$dropdown-bg:                       var(--#{$prefix}white) !default;
+$dropdown-border-color:             var(--#{$prefix}border-color-translucent) !default;
+
+
+
+
+// Buttons + Forms
+//
+// Shared variables that are reassigned to `$input-` and `$btn-` specific variables.
+$input-btn-padding-y:         .575rem !default;
+$input-btn-padding-x:         1rem !default;
+$input-btn-font-size:         0.9rem !default;
+
+$input-btn-padding-y-sm:      .425rem !default;
+$input-btn-padding-x-sm:      1rem !default;
+$input-btn-focus-box-shadow:    unset !default;
+
+
+
+$btn-padding-y:               .65rem !default;
+$btn-padding-x:               1.25rem !default;
+
+$btn-padding-y-sm:            .5rem !default;
+$btn-padding-x-sm:            1.1rem !default;
+
+
+$btn-padding-y-lg:            1rem !default;
+$btn-padding-x-lg:            1.875rem !default;
+
+
+$btn-focus-width:             0 !default;
+$btn-focus-box-shadow:        unset !default;
+//$input-btn-font-size-sm:      $font-size-sm !default;
+//$input-btn-line-height-sm:    $line-height-sm !default;
+
+
+// scss-docs-start form-label-variables
+$form-label-margin-bottom:              .4rem !default;
+$form-label-font-size:                  .85rem !default;
+
+
+// Cards
+
+// scss-docs-start card-variables
+$card-spacer-y:                     $spacer !default;
+$card-spacer-x:                     $spacer !default;
+$card-title-spacer-y:               $spacer * .5 !default;
+$card-border-width:                 $border-width !default;
+$card-border-color:                 var(--#{$prefix}gray-300) !default;
+$card-border-radius:                $border-radius + 0.15rem !default;
+$card-box-shadow:                   null !default;
+$card-inner-border-radius:          subtract($card-border-radius, $card-border-width) !default;
+$card-cap-padding-y:                $card-spacer-y * .5 !default;
+$card-cap-padding-x:                $card-spacer-x !default;
+$card-cap-bg:                       var(--#{$prefix}white) !default;
+$card-cap-color:                    null !default;
+$card-height:                       null !default;
+$card-color:                        null !default;
+$card-bg:                           $white !default;
+$card-img-overlay-padding:          $spacer !default;
+//$card-group-margin:                 $grid-gutter-width * .5 !default;
+// scss-docs-end card-variables
+
+
+
+
+
+// Section
+$px-section-xl-padding-y:   6.25rem !default;
+$px-section-lg-padding-y:   5.5rem !default;
+$px-section-md-padding-y:   3.75rem !default;
+$px-section-padding-y:      2.5rem !default;
+
+
+// Section Heading
+$px-section-heading-bottom-margin:    2.8125rem !default;
+
+
+// Avatar
+$avatar-size-base: 3.125rem;
+$avatar-size-xxs: 1rem;
+$avatar-size-xs: 1.75rem;
+$avatar-size-sm: 2.6875rem;
+$avatar-size-lg: 4.25rem;
+$avatar-size-xl: 5.625rem;
+$avatar-size-xxl: 7rem;
+$avatar-size-xxxl: 8rem;
+
+
+$avatar-font-size-base: 1rem;
+$avatar-font-size-xxs: .50rem;
+$avatar-font-size-xs: .60rem;
+$avatar-font-size-sm: .8125rem;
+$avatar-font-size-lg: 1.25rem;
+$avatar-font-size-xl: 2rem;
+$avatar-font-size-xxl: 3rem;
+$avatar-font-size-xxxl: 3.5rem;
+
+
+// All Header Variable
+$px-header-border: 	      var(--#{$prefix}dark) !default;
+$px-header-link-color:		var(--#{$prefix}dark) !default;
+$px-header-bg:            var(--#{$prefix}white) !default;
+
+// Footer
+$px-footer-link-color: rgba(var(--#{$prefix}white-rgb), 0.7);
+$px-footer-link-color-hover: var(--#{$prefix}white);
+$px-footer-bg: var(--#{$prefix}dark);
+$px-footer-border: $dark;
+
+
+
+// Product Card
+$px-product-card-bg:  var(--#{$prefix}white) !default;
+$px-product-card-border-light: var(--#{$prefix}gray-300) !default;
+$px-product-card-border-dark: var(--#{$prefix}dark) !default;
+
+/*$px-product-card-border:  #C4C4C4 !default;
+$px-product-card-hover-border:  #000 !default;
+$px-product-card-color:  #000 !default;*/
+
+

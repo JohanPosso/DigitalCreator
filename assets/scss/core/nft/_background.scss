@@ -1,0 +1,40 @@
+.bg-cover {
+    background-size: cover;
+}
+
+.bg-right-center {
+    background-position: center right;
+}
+
+.bg-no-repeat {
+    background-repeat: no-repeat;
+}
+
+.bg-center {
+    background-position: center;
+}
+
+@include media-breakpoint-up(lg) {
+  .bg-fixed {
+    background-attachment: fixed;
+  }
+}
+
+
+.bg-gray-gradient {
+    background: linear-gradient(0deg, rgba(var(--bs-white-rgb), 0), rgba(var(--bs-gray-100-rgb), 1) 100%) !important;
+}
+
+.bg-gray-gradient-reverse {
+    background: linear-gradient(0deg, rgba(var(--bs-gray-100-rgb), 1), rgba(var(--bs-white-rgb), 0) 100%) !important;
+}
+
+.bg-gradient-01 {
+    background: linear-gradient(252.84deg, rgba(117, 79, 254, 0.1) 19.72%, rgba(255, 75, 0, 0.1) 145.04%);
+}
+
+
+.blur-bg {
+    -webkit-backdrop-filter: saturate(180%) blur(20px);
+    backdrop-filter: saturate(180%) blur(20px);
+}

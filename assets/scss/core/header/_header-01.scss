@@ -1,0 +1,19 @@
+
+.main-header-01 {
+    &.navbar-light {
+        .navbar-nav {
+            --bs-nav-link-color: var(--#{$prefix}dark);
+        }
+    }
+    .navbar {
+        .navbar-nav {
+            .nav-link {
+                white-space: nowrap;
+                --bs-nav-link-font-weight: 600;
+                @include media-breakpoint-up(lg) {
+                    --bs-nav-link-padding-y: 1.4rem;
+                }
+            }
+        }
+    }
+}

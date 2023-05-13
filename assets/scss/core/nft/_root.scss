@@ -1,0 +1,22 @@
+:root {
+	--#{$prefix}body-color: #{$body-color};
+    --#{$prefix}body-bg: #{$body-bg};
+
+    // Header
+    --#{$prefix}header-border: #{$px-header-border};
+    --#{$prefix}header-link-color: #{$px-header-link-color};
+    --#{$prefix}header-bg: #{$px-header-bg};
+
+    // Footer
+    --#{$prefix}footer-link-color: #{$px-footer-link-color};
+    --#{$prefix}footer-link-color-hover: #{$px-footer-link-color-hover};
+    --#{$prefix}footer-bg: #{$px-footer-bg};
+    --#{$prefix}footer-border: #{$px-footer-border};
+
+    // Product Card
+    --#{$prefix}product-card-bg: #{$px-product-card-bg};
+    --#{$prefix}product-card-border-light: #{$px-product-card-border-light};
+    --#{$prefix}product-card-border-dark: #{$px-product-card-border-dark};
+    
+
+}

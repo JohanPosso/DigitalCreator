@@ -1,0 +1,171 @@
+:root {
+    --swiper-theme-color: #{$primary};
+}
+
+.swiper-arrow-style-01 {
+    line-height: 1;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: ease all 0.35s;
+    font-size: 20px;
+    width: 40px;
+    height: 40px;
+    background: var(--#{$prefix}white);
+    border: 1px solid var(--#{$prefix}dark);
+    color: var(--#{$prefix}dark);
+    &.swiper-button-disabled {
+        opacity: 0.5 !important;
+        pointer-events: none;
+    }
+
+    + .swiper-arrow-style-01 {
+        margin-left: 15px;
+    }
+
+    &:hover {
+        background: var(--#{$prefix}dark);
+        color: var(--#{$prefix}white);
+    }
+}
+
+
+.swiper-arrow-style-02 {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    background: var(--bs-gray-100);
+    color: var(--bs-white);
+    z-index: 1;
+    text-align: center;
+    line-height: 1;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: ease all 0.35s;
+    font-size: 20px;
+    width: 25px;
+    height: 40px;
+
+    &.swiper-button-disabled {
+        .swiper-hover-arrow:hover & {
+            opacity: 0.5;
+            pointer-events: none;
+        }
+    }
+
+    &:hover {
+        background: var(--bs-primary);
+        color: var(--bs-white);
+    }
+
+    .swiper-hover-arrow & {
+        opacity: 0;
+    }
+
+    .swiper-hover-arrow:hover & {
+        opacity: 1;
+    }
+
+    &.swiper-next {
+        right: 0;
+    }
+
+    &.swiper-prev {
+        left: 0;
+    }
+}
+
+.swiper-arrow-style-03 {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    color: var(--bs-gray-100);
+    background: var(--bs-white);
+    z-index: 1;
+    text-align: center;
+    line-height: 1;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    right: 0;
+    transition: ease all 0.35s;
+    font-size: 18px;
+    width: 25px;
+    height: 33px;
+
+    &.swiper-button-disabled {
+        opacity: 0.5 !important;
+        pointer-events: none;
+    }
+
+    &:hover {
+        background: var(--bs-primary);
+        color: var(--bs-white);
+    }
+
+    .swiper-hover-arrow & {
+        opacity: 0;
+    }
+
+    .swiper-hover-arrow:hover & {
+        opacity: 1;
+    }
+
+    &.swiper-prev {
+        left: 0;
+        right: auto;
+    }
+
+    .swiper-vertical  & {
+        margin: auto;
+        width: 40px;
+        height: 20px;
+        &.swiper-next {
+            bottom: auto;
+            top: 0;
+            left: 0;
+            right: 0;
+        }
+        &.swiper-prev {
+            bottom: 0;
+            top: auto;
+            left: 0;
+            right: 0;
+        }
+    }
+}
+
+
+.swiper-pagination {
+    .swiper-pagination-bullet {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        border: 1px solid var(--bs-primary);
+        background: transparent;
+        opacity: 1;
+        &.swiper-pagination-bullet-active,
+        &:hover {
+            background: var(--bs-primary);
+        }
+    }
+    &.swiper-pagination-white {
+        .swiper-pagination-bullet {
+            border: 1px solid var(--bs-white);
+            background: transparent;
+            &.swiper-pagination-bullet-active,
+            &:hover {
+                background: var(--bs-white);
+            }
+        }
+    }
+}
+
+.swiper {
+    &.swiper-no-scroll {
+        overflow: inherit;
+    }   
+}

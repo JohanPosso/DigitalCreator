@@ -1,0 +1,42 @@
+.count-down-01 {
+	display: flex;
+	> div {
+		+ div {
+			padding-left: 10px;
+		    margin-left: 10px;
+		    position: relative;
+			&:before {
+			    content: ":";
+			    position: absolute;
+			    top: 0;
+			    left: 0;
+			}
+		}
+	}
+}
+
+.pd-count-down {
+	.count-down {
+		display: flex;
+		> div {
+			margin-right: 8px;
+			display: inline-flex;
+			align-items: center;
+			flex-direction: column;
+			text-align: center;
+		}
+		.count {
+			min-height: 45px;
+		    width: 45px;
+		    display: inline-flex;
+		    align-items: center;
+		    justify-content: center;
+		    border: 1px solid #ddd;
+		    font-weight: 500;
+		    color: var(--#{$prefix}dark);
+		}
+		.title {
+			font-size: 12px;
+		}
+	}
+}

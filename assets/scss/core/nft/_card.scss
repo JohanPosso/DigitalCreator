@@ -1,0 +1,64 @@
+.card-wallet {
+	border: 1px solid transparent;
+	border-top: 10px solid;
+	padding: 1rem;
+	text-align: center;
+	position: relative;
+	transition: ease all 0.35s;
+	.btn-bar {
+		padding-top: 1rem;
+		a {
+			display: inline-flex;
+			padding: 0.4rem 1rem;
+			width: 100%;
+			color: var(--#{$prefix}white);
+			transition: ease all 0.35s;
+			text-align: center;
+			justify-content: center;
+			&:hover {
+				background: var(--#{$prefix}dark) !important;
+				color: var(--#{$prefix}white);
+			}
+		}
+	}
+	&:hover {
+		border-color: var(--#{$prefix}dark) !important;
+	}
+}
+
+.card-wallet-coinbase {
+	border-top-color: #0052FF;
+	.btn-bar {
+		a {
+			background: #0052FF;
+		}
+	}
+}
+
+.card-wallet-binance {
+	border-top-color: #F3BA2F;
+	.btn-bar {
+		a {
+			background: #F3BA2F;
+		}
+	}
+}
+
+.card-wallet-fortmatic {
+	border-top-color: #6851FF;
+	.btn-bar {
+		a {
+			background: #6851FF;
+		}
+	}
+}
+
+.card-wallet-metamask {
+	border-top-color: #F5841F;
+	.btn-bar {
+		a {
+			background: #F5841F;
+		}
+	}
+}
+

@@ -1,0 +1,98 @@
+// Generate series of `.navbar-expand-*` responsive classes for configuring
+// where your navbar collapses.
+.navbar-expand {
+    @each $breakpoint in map-keys($grid-breakpoints) {
+        $next: breakpoint-next($breakpoint, $grid-breakpoints);
+        $infix: breakpoint-infix($next, $grid-breakpoints);
+
+        // stylelint-disable-next-line scss/selector-no-union-class-name
+        &#{$infix} {
+            @include media-breakpoint-down($next) {
+                padding: 1rem 0;
+                .header-navbar-brand {
+                    max-width: 120px;
+                }
+                .offcanvas-header {
+                    border-bottom: 1px solid var(--#{$prefix}gray-300);
+                }
+                > .container {
+                    position: relative;
+                }
+                .navbar-nav {
+                    > .nav-item {
+                        border-bottom: 1px solid var(--#{$prefix}gray-300);
+                        > .nav-link {
+                            color: var(--#{$prefix}header-link-color);
+                            padding: 1rem 0;
+                            text-transform: uppercase;
+                            font-weight: 600;
+                        }
+                        > .dropdown-toggle {
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-between;
+                        }
+                    }
+                }
+            }
+
+            @include media-breakpoint-up($next) {
+                padding: 0;
+                .navbar-nav {
+                    border-right: 1px solid var(--#{$prefix}header-border);
+                    border-left: 1px solid var(--#{$prefix}header-border);
+                    padding: 0 30px;
+                    margin: 0 auto;
+                    > .nav-item {
+                        > .nav-link {
+                            color: var(--#{$prefix}header-link-color);
+                            padding: 1.5rem 1.2rem;
+                            text-transform: uppercase;
+                            font-weight: 600;
+                        }
+                        &.dropdown {
+                            >.nav-link {
+                                &:after {
+                                    content: "\f282";
+                                    display: inline-block;
+                                    font-family: bootstrap-icons !important;
+                                    font-style: normal;
+                                    font-weight: normal !important;
+                                    font-variant: normal;
+                                    text-transform: none;
+                                    line-height: 1;
+                                    vertical-align: -.125em;
+                                    -webkit-font-smoothing: antialiased;
+                                    -moz-osx-font-smoothing: grayscale;
+                                    color: currentColor;
+                                    font-size: 75%;
+                                    margin-left: 7px;
+                                    border: none;
+                                }
+                            }
+                            &:hover {
+                                >.dropdown-menu {
+                                    opacity: 1;
+                                    pointer-events: auto;
+                                }
+                            }
+                        }
+                    }
+                    // Dropdown Menu
+                    .dropdown-menu {
+                        display: block;
+                        opacity: 0;
+                        pointer-events: none;
+                        transition: ease all 0.35s;
+                        margin: 0;
+                        // Dropdown Item
+                        .dropdown-item {
+                            padding: 0.4rem 1rem;
+                            font-weight: 500;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,220 @@
+
+// Product Card 1
+.product-card {
+	border: 1px solid var(--#{$prefix}product-card-border-light);
+	background: var(--#{$prefix}product-card-bg);
+
+	transition: ease border 0.10s;
+
+	.product-card-header {
+		border-bottom: 1px solid var(--#{$prefix}product-card-border-light);
+		padding: 0.5rem 1rem;
+		display: flex;
+		transition: ease border 0.10s;
+		.avatar-group {
+			margin-right: auto;
+		}
+		.bid-btn-toggle {
+		    border: none;
+		    background: none;
+		    padding: 0;
+		    outline: none;
+		    box-shadow: none;
+		    text-align: right;
+			&:after {
+				display: none;
+			}
+		}
+	}
+
+	.product-card-body {
+		padding: 1rem;
+	}
+	.product-media {
+		position: relative;
+		overflow: hidden;
+		img {
+			transition: ease all 0.25s;
+			transform: scale(1);
+		}
+	}
+	.btn-wishlist {
+	    position: absolute;
+	    top: 10px;
+	    right: 10px;
+	    width: 2.4rem;
+	    height: 2.4rem;
+	    background: var(--#{$prefix}yellow-dark);
+	    display: inline-flex;
+	    align-items: center;
+	    justify-content: center;
+	    border-radius: 50%;
+	    color: var(--#{$prefix}dark);
+	}
+
+	.product-title {
+		display: flex;
+		padding-top: 15px;
+		align-items: center;
+		h6 {
+			flex: 0 0 calc(100% - 2rem);
+		    max-width: calc(100% - 2rem);
+		    overflow: hidden;
+		    text-overflow: ellipsis;
+		    white-space: nowrap;
+		    font-size: 1.15rem;
+		}
+		.cur-icon {
+		    width: 1.8rem;
+		    height: 1.8rem;
+		    display: inline-flex;
+		    align-items: center;
+		    justify-content: center;
+		    align-self: center;
+		    margin-left: auto;
+		    img {
+			    width: 100%;
+			    height: 100%;
+			    object-fit: contain;
+			    display: block;
+		    }
+		}
+	}
+
+	.product-price {
+		display: flex;
+		padding-top: 15px;
+		.p-start {
+			font-size: 0.85rem;
+		}
+		.price {
+			font-size: 1.15rem;
+			font-weight: 600;
+			color: var(--#{$prefix}black);
+		}
+		.p-end {
+			margin-left: auto;
+			margin-top: auto;
+		}
+	}
+
+	.p-tag {
+	    display: inline-flex;
+	    padding: 0.2rem 0.6rem;
+	    background: rgba(var(--#{$prefix}primary-rgb), .2);
+	    font-size: 0.8rem;
+	    color: var(--#{$prefix}primary);
+	    font-weight: 600;
+	}
+
+	.product-card-footer {
+		border-top: 1px solid var(--#{$prefix}product-card-border-light);
+		display: flex;
+		padding: 0.5rem 1rem;
+		transition: ease border 0.10s;
+		.bid-btn-end,
+		.bid-btn-start {
+			flex: 1;
+			margin-left: -0.5rem;
+			padding-left: 0.5rem;
+		}
+		.bid-btn-link {
+			display: inline-flex;
+		    padding: 0.6rem 0;
+		    font-size: 0.85rem;
+		    color: var(--#{$prefix}dark);
+		    font-weight: 600;
+		    width: 100%;
+		}
+		.bid-btn {
+			display: inline-flex;
+			justify-content: center;
+		    padding: 0.5rem 0.7rem;
+		    background: var(--#{$prefix}dark);
+		    color: var(--#{$prefix}white);
+		    font-size: 0.85rem;
+		    font-weight: 600;
+		    width: 100%;
+		    border: none;
+		    &:hover {
+		    	background: var(--#{$prefix}primary);
+		    	color: var(--#{$prefix}white);
+		    }
+		}
+	}
+
+	&:hover {
+		border: 1px solid var(--#{$prefix}product-card-border-dark);
+		.product-card-header {
+			border-bottom: 1px solid var(--#{$prefix}product-card-border-dark);
+		}
+		.product-card-footer {
+			border-top: 1px solid var(--#{$prefix}product-card-border-dark);	
+		}
+		.product-media {
+			img {
+				transform: scale(1.05);
+			}
+		}
+	}
+}
+
+
+
+// Product Card 2
+
+.product-card-2 {
+	border: 1px solid var(--#{$prefix}product-card-border-dark);
+	background: var(--#{$prefix}product-card-bg);
+	position: relative;
+	.product-media {
+		overflow: hidden;
+		img {
+			transition: ease all 0.25s;
+			transform: scale(1);
+			width: 100%;
+		}
+	}
+	.product-card-info {
+		position: absolute;
+		bottom: 20px;
+		left: 20px;
+		right: 20px;
+		background: linear-gradient(100.13deg, rgba(var(--#{$prefix}white-rgb), 0.5) -7.77%, rgba(var(--#{$prefix}white-rgb), 0.32) 126.5%);
+		box-shadow: inset 4px 4px 16px rgba(var(--#{$prefix}dark-rgb), 0.21);
+		backdrop-filter: blur(10px);
+		border: 2px solid var(--#{$prefix}dark);
+		display: flex;
+		padding: 15px;
+		.name {
+			flex: 0 0 60%;
+			max-width: 60%;
+			h6 {
+				color: var(--#{$prefix}dark);
+			    font-size: 1.2rem;
+			    max-width: 100%;
+			    overflow: hidden;
+			    text-overflow: ellipsis;
+			    white-space: nowrap;
+			    margin: 0 0 5px;
+			}
+			span {
+				color: var(--#{$prefix}dark);
+			}
+		}
+		.price {
+			flex: 0 0 40%;
+			max-width: 40%;
+			text-align: right;
+			color: var(--#{$prefix}dark);
+		}
+	}
+
+	&:hover {
+		.product-media {
+			img {
+				transform: scale(1.05);
+			}
+		}
+	}
+}

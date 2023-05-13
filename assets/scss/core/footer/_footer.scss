@@ -1,0 +1,38 @@
+.footer-title-01 {
+    margin: 0 0 20px;
+    font-weight: 600;
+}
+
+.footer-link-01 {
+    li {
+        +li {
+            padding-top: 0.4rem;
+        }
+    }
+
+    a {
+        position: relative;
+        display: inline-block;
+        vertical-align: top;
+        &:after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: auto;
+            right: 0;
+            width: 0px;
+            height: 1px;
+            transition: ease all 0.35s;
+            background: currentColor;
+        }
+
+        &:hover {
+        	--bs-text-opacity: 1;
+            &:after {
+                left: 0;
+                right: auto;
+                width: 100%;
+            }
+        }
+    }
+}

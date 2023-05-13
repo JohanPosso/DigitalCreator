@@ -1,0 +1,37 @@
+.home-banner-01 {
+	.hb-01-right {
+		position: relative;
+	}
+	.hb-01-card {
+		position: absolute;
+	    top: 5%;
+	    left: 5%;
+	    width: 150px;
+	    z-index: 2;
+	    background: var(--#{$prefix}white);
+	    padding: 0.6rem;
+	    h6 {
+	    	margin: 10px 0 5px;
+	    }
+	}
+	.hb-01-user {
+		position: absolute;
+	    bottom: 20%;
+	    left: 0;
+	    &.right {
+	    	top: 20%;
+	    	right: 0;
+	    	left: auto;
+	    	bottom: auto;
+	    }
+	}
+	.swiper {
+		max-width: 460px;
+		@include media-breakpoint-down(lg) {
+			max-width: 400px;
+		}
+		@include media-breakpoint-down(md) {
+			max-width: 300px;
+		}
+	}
+}
