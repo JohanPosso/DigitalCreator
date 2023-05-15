@@ -62,14 +62,14 @@
             <a class="navbar-brand header-navbar-brand" href="/index.html">
               <img
                 class="logo-dark"
-                src="/assets/img/logo.png"
+                src="/assets/img/logo2.png"
                 title=""
                 alt=""
-                style="width: 100px"
+                style="width: 200px"
               />
               <img
                 class="logo-light"
-                src="/assets/img/logo.png"
+                src="/assets/img/logo2.png"
                 title=""
                 alt=""
               />
@@ -96,7 +96,7 @@
                 <div class="offcanvas-title" id="offcanvasNavbar1Label">
                   <img
                     class="logo-dark"
-                    src="/assets/img/landing/logo.svg"
+                    src="/assets/img/logo2.png"
                     title=""
                     alt=""
                   />
@@ -144,9 +144,10 @@
                 </ul>
               </div>
             </div>
-            <div class="header-right d-none d-lg-block ps-4">
-              <a href="#" class="btn btn-warning"> Sign Up </a>
-            </div>
+            <div
+              id="google_translate_element"
+              class="header-right d-none d-lg-block ps-4"
+            ></div>
           </div>
         </nav>
       </header>
@@ -714,7 +715,7 @@
                           id="contact-subject"
                           type="text"
                           name="subject"
-                          placeholder="Subject"
+                          placeholder="Asunto"
                           class="form-control"
                         />
                       </div>
@@ -743,7 +744,7 @@
                 </form>
               </div>
               <div class="col-lg-5 col-xl-4 ms-auto">
-                <h5 class="mb-4">Reach out now!</h5>
+                <h5 class="mb-4">Póngase en contacto con nosotros</h5>
                 <div class="d-flex align-items-center py-2 py-lg-3">
                   <div
                     class="icon-lg bg-primary bg-opacity-10 text-primary rounded-circle"
@@ -787,11 +788,7 @@
           <div class="container">
             <div class="row gy-5">
               <div class="col-lg-3">
-                <img
-                  src="../assets/img/landing/logo-light.svg"
-                  title=""
-                  alt=""
-                />
+                <img src="/assets/img/logo2.png" title="" alt="" />
               </div>
               <div class="col-6 col-lg-2">
                 <h5 class="text-white footer-title-01 fs-lg">Useful</h5>
@@ -908,7 +905,7 @@
       <!-- Boton Whatsapp -->
       <div class="container">
         <a
-          href="https://api.whatsapp.com/send?phone=+447466195881&text=Hola mi nombre es... "
+          href="https://api.whatsapp.com/send?phone=+447466195881&text=Hola, "
           class="whatsapp-button"
           target="_blank"
           style="position: fixed; right: 45px; bottom: 50px"
@@ -939,6 +936,9 @@
     <!-- purecounter JS -->
     <script src="/assets/vendor/purecounter/purecounter_vanilla.js"></script>
 
+    <!-- Main JS -->
+    <script src="/assets/js/main.js"></script>
+
     <!-- working form -->
     <!-- <script src="../assets/vendor/mail/js/form.min.js"></script>
 <script src="../assets/vendor/mail/js/script.js"></script> -->
@@ -952,6 +952,11 @@
     <!-- magnific JS -->
     <script src="/assets/vendor/isotope/isotope.pkgd.min.js"></script>
     <script src="/assets/js/theme-jquery.js"></script>
+    <!-- Google translate -->
+    <script
+      type="text/javascript"
+      src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"
+    ></script>
     <!-- End script start -->
   </body>
 </html>
