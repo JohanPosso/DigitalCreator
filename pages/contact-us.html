@@ -9,15 +9,19 @@
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
-    <meta name="keywords" content="Crizo - Multipurpose Responsive Template" />
+    <meta
+      name="keywords"
+      content="DigitalCreator - Web application development"
+    />
     <meta
       name="description"
-      content="Crizo - Multipurpose Responsive Template"
+      content="DigitalCreator - Web application development"
     />
     <!-- title -->
-    <title>Crizo - Multipurpose Responsive Template</title>
+    <title>DigitalCreator</title>
     <!-- Favicon -->
-    <link rel="shortcut icon" href="../assets/img/favicon.ico" />
+    <link rel="shortcut icon" href="/assets/img/logo.png" />
+
     <!-- CSS Template -->
     <link href="../assets/css/theme.css" rel="stylesheet" />
   </head>
@@ -56,17 +60,17 @@
         <nav class="navbar navbar-expand-lg">
           <div class="container">
             <!-- Logo -->
-            <a class="navbar-brand header-navbar-brand" href="index.html">
+            <a class="navbar-brand header-navbar-brand" href="/index.html">
               <img
                 class="logo-dark"
-                src="../assets/img/logo.png"
+                src="/assets/img/logo2.png"
                 title=""
                 alt=""
-                style="width: 100px"
+                style="width: 200px"
               />
               <img
                 class="logo-light"
-                src="../assets/img/logo.png"
+                src="/assets/img/logo2.png"
                 title=""
                 alt=""
               />
@@ -93,7 +97,7 @@
                 <div class="offcanvas-title" id="offcanvasNavbar1Label">
                   <img
                     class="logo-dark"
-                    src="../assets/img/landing/logo.svg"
+                    src="/assets/img/logo2.png"
                     title=""
                     alt=""
                   />
@@ -121,7 +125,7 @@
                   <li class="nav-item">
                     <a
                       class="nav-link"
-                      href="services.html"
+                      href="/pages/services.html"
                       role="button"
                       aria-expanded="false"
                     >
@@ -131,40 +135,20 @@
                   <li class="nav-item">
                     <a
                       class="nav-link"
-                      href="contact-us.html"
+                      href="/pages/contact-us.html"
                       role="button"
                       aria-expanded="false"
                     >
                       Contacto
                     </a>
                   </li>
-                  <li class="nav-item dropdown">
-                    <a
-                      class="nav-link dropdown-toggle"
-                      href="#"
-                      role="button"
-                      data-bs-toggle="dropdown"
-                      aria-expanded="false"
-                    >
-                      Blog
-                    </a>
-                    <ul class="dropdown-menu start">
-                      <li>
-                        <a class="dropdown-item" href="blog.html">Blog</a>
-                      </li>
-                      <li>
-                        <a class="dropdown-item" href="blog-single.html"
-                          >Blog Single</a
-                        >
-                      </li>
-                    </ul>
-                  </li>
                 </ul>
               </div>
             </div>
-            <div class="header-right d-none d-lg-block ps-4">
-              <a href="#" class="btn btn-warning"> Sign Up </a>
-            </div>
+            <div
+              id="google_translate_element"
+              class="header-right d-none d-lg-block ps-4"
+            ></div>
           </div>
         </nav>
       </header>
@@ -181,13 +165,13 @@
             class="position-absolute top-0 start-0 end-0 bottom-0 bg-dark bg-opacity-70"
           ></div>
           <div class="container position-relative">
-            <h1 class="text-white m-0 text-center">Contact Us</h1>
+            <h1 class="text-white m-0 text-center">Contactanos</h1>
             <ol
               class="breadcrumb breadcrumb-light mb-0 mt-3 justify-content-center"
             >
-              <li class="breadcrumb-item"><a href="#">Home</a></li>
+              <li class="breadcrumb-item"><a href="/index.html">Inicio</a></li>
               <li class="breadcrumb-item active" aria-current="page">
-                Contact Us
+                Contactanos
               </li>
             </ol>
           </div>
@@ -198,12 +182,12 @@
           <div class="container">
             <div class="row justify-content-center">
               <div class="col-lg-7 text-center mb-6">
-                <h2 class="display-4 mt-3">Get in touch</h2>
-                <p class="fs-lg m-0">
-                  Crizo is a HTML5 template based on Sass and Bootstrap 5 with
-                  modern and creative multipurpose design you can use it as a
-                  startups.
-                </p>
+                <h2 class="display-4 mt-3">Póngase en contacto</h2>
+                <img
+                  src="/assets/img/Interview-amico.svg"
+                  alt=""
+                  style="width: 25%"
+                />
               </div>
             </div>
             <div class="row justify-content-center">
@@ -212,7 +196,7 @@
                   <div class="row gy-4">
                     <div class="col-sm-6">
                       <div class="form-group">
-                        <label for="contact-name">Your Name</label>
+                        <label for="contact-name">Nombre</label>
                         <input
                           id="contact-name"
                           type="text"
@@ -224,7 +208,7 @@
                     </div>
                     <div class="col-sm-6">
                       <div class="form-group">
-                        <label for="contact-phone">Phone (optional)</label>
+                        <label for="contact-phone">Telefono (opcional)</label>
                         <input
                           id="contact-phone"
                           type="email"
@@ -235,7 +219,7 @@
                     </div>
                     <div class="col-sm-12">
                       <div class="form-group">
-                        <label for="contact-subject">Subject</label>
+                        <label for="contact-subject">Asunto</label>
                         <input
                           id="contact-subject"
                           type="text"
@@ -247,7 +231,7 @@
                     </div>
                     <div class="col-12">
                       <div class="form-group">
-                        <label for="contact-message">Message</label>
+                        <label for="contact-message">Mensaje</label>
                         <textarea
                           class="form-control"
                           id="contact-message"
@@ -263,7 +247,7 @@
                         type="submit"
                         name="send"
                       >
-                        Write to us
+                        Enviar
                       </button>
                       <div class="snackbars" id="form-output-global"></div>
                     </div>
@@ -286,8 +270,10 @@
                     >
                       <i class="fas fa-phone"></i>
                     </div>
-                    <h5>+01 963 965 3265</h5>
-                    <p class="m-0">Do not hesitate to contact us</p>
+                    <h5>+44 7466 195881</h5>
+                    <p class="m-0">
+                      No dude en ponerse en contacto con nosotros
+                    </p>
                   </div>
                 </div>
               </div>
@@ -299,8 +285,8 @@
                     >
                       <i class="fas fa-envelope"></i>
                     </div>
-                    <h5>support@yourdomain.com</h5>
-                    <p class="m-0">We will come back to you in 24 hours</p>
+                    <h5>creatordigitalweb@gmail.com</h5>
+                    <p class="m-0">Le responderemos lo mas breve posible</p>
                   </div>
                 </div>
               </div>
@@ -330,11 +316,7 @@
             <div class="row">
               <div class="col-lg-4 my-4">
                 <div class="mb-4">
-                  <img
-                    src="../assets/img/landing/logo-light.svg"
-                    title=""
-                    alt=""
-                  />
+                  <img src="/assets/img/logo2.png" title="" alt="" />
                 </div>
                 <div class="nav">
                   <a
@@ -501,6 +483,13 @@
     <!-- magnific JS -->
     <script src="../assets/vendor/isotope/isotope.pkgd.min.js"></script>
     <script src="../assets/js/theme-jquery.js"></script>
+    <!-- Google translate -->
+    <script
+      type="text/javascript"
+      src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"
+    ></script>
+    <!-- Main JS -->
+    <script src="/assets/js/main.js"></script>
     <!-- End script start -->
   </body>
 </html>
