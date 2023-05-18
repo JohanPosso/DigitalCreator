@@ -24,6 +24,7 @@
 
     <!-- CSS Template -->
     <link href="/assets/css/theme.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/assets/css/style.css" />
   </head>
 
   <body>
@@ -312,22 +313,38 @@
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
                   <div class="m-1 p-3 m-sm-2">
-                    <img src="/assets/img/angular-icon-1.svg" title="" alt="" />
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="m-1 p-3 m-sm-2">
-                    <img src="/assets/img/github-icon-1.svg" title="" alt="" />
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="m-1 p-3 m-sm-2">
-                    <img src="/assets/img/python-5.svg" title="" alt="" />
+                    <img
+                      class="imgBanner"
+                      src="/assets/img/angular-icon-1.svg"
+                      title=""
+                      alt=""
+                    />
                   </div>
                 </div>
                 <div class="swiper-slide">
                   <div class="m-1 p-3 m-sm-2">
                     <img
+                      class="imgBanner"
+                      src="/assets/img/github-icon-1.svg"
+                      title=""
+                      alt=""
+                    />
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="m-1 p-3 m-sm-2">
+                    <img
+                      class="imgBanner"
+                      src="/assets/img/python-5.svg"
+                      title=""
+                      alt=""
+                    />
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="m-1 p-3 m-sm-2">
+                    <img
+                      class="imgBanner"
                       src="/assets/img/logo-javascript.svg"
                       title=""
                       alt=""
@@ -336,22 +353,42 @@
                 </div>
                 <div class="swiper-slide">
                   <div class="m-1 p-3 m-sm-2">
-                    <img src="/assets/img/typescript.svg" title="" alt="" />
+                    <img
+                      class="imgBanner"
+                      src="/assets/img/typescript.svg"
+                      title=""
+                      alt=""
+                    />
                   </div>
                 </div>
                 <div class="swiper-slide">
                   <div class="m-1 p-3 m-sm-2">
-                    <img src="/assets/img/react-2.svg" title="" alt="" />
+                    <img
+                      class="imgBanner"
+                      src="/assets/img/react-2.svg"
+                      title=""
+                      alt=""
+                    />
                   </div>
                 </div>
                 <div class="swiper-slide">
                   <div class="m-1 p-3 m-sm-2">
-                    <img src="/assets/img/postgresql.svg" title="" alt="" />
+                    <img
+                      class="imgBanner"
+                      src="/assets/img/postgresql.svg"
+                      title=""
+                      alt=""
+                    />
                   </div>
                 </div>
                 <div class="swiper-slide">
                   <div class="m-1 p-3 m-sm-2">
-                    <img src="/assets/img/python-5.svg" title="" alt="" />
+                    <img
+                      class="imgBanner"
+                      src="/assets/img/python-5.svg"
+                      title=""
+                      alt=""
+                    />
                   </div>
                 </div>
               </div>
@@ -685,7 +722,7 @@
             </div>
             <div class="row align-items-center gy-4">
               <div class="col-lg-6">
-                <form action="#">
+                <form id="form">
                   <div class="row gy-4">
                     <div class="col-sm-6">
                       <div class="form-group">
@@ -733,12 +770,14 @@
                       </div>
                     </div>
                     <div class="col-12">
+                      <a id="btnSendEmail"></a>
                       <button
+                        id="send"
                         class="btn btn-primary w-100"
                         type="submit"
                         name="send"
                       >
-                        Get Started
+                        Enviar
                       </button>
                     </div>
                   </div>
@@ -868,9 +907,7 @@
               <div class="col-md-6 text-center text-md-start py-1">
                 <p class="m-0 text-white text-opacity-75">
                   © 2023 copyright by
-                  <a class="text-reset" href="https://pxdraft.com/"
-                    >DigitalCreator</a
-                  >
+                  <a class="text-reset">DigitalCreator</a>
                 </p>
               </div>
               <div class="col-md-6 text-center text-md-end py-1">
