@@ -16,7 +16,7 @@ btnSend.addEventListener("click", (e) => {
 
   btnSendEmail.setAttribute(
     "href",
-    `mailto:johan.posito@gmail.com?subject=${asunto.value}&body=${mensaje.value}`
+    `mailto:digitalcreatorweb@gmail.com?subject=${asunto.value}&body=${mensaje.value}`
   );
   btnSendEmail.click();
 });
